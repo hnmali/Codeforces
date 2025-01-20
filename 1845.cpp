@@ -18,15 +18,8 @@ void solve() {
             cout << "1 ";
         cout << "\n";
     }
-    else if (k == 1) 
+    else if (k == 1 || (k == 2 && (n&1))) 
         cout << "NO\n";
-    else if(k == 2 && !(n&1)) {
-        cout << "YES\n" << n/2 <<'\n';
-        n /= 2;
-        while(n--)
-            cout << "2 ";
-        cout << '\n';
-    }
     else {
         cout << "YES\n" << n/2 << '\n';
         if(n&1) 
