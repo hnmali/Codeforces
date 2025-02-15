@@ -18,7 +18,7 @@ void solve() {
             for(int k = 0; k < 26; k++)
                 if(i+j+k+3 == n) {
                     curr += char(i+'a');
-                    curr += char(i+'a');
+                    curr += char(j+'a');    
                     curr += char(k+'a');
                     s = min(curr, s);
                 }
